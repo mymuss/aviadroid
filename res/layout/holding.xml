@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AviaDroid
+    Copyright (C) 2014  Andrew Novikov
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <TextView
+    android:layout_marginTop="15dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="23sp"
+    android:text="@string/txt_holding_title" />
+  <ImageView
+    android:layout_marginTop="15dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ack" />
+  <TextView
+    android:id="@+id/txt_clearance"
+    android:layout_margin="15dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="18sp"
+    android:gravity="center"
+    android:text="N123AB Cleared To Nantucket VOR, Hold South on 055 Radial, Right Turns"
+    /><!-- the text is for layout design only -->
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+    <Button
+      android:layout_weight="2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:text="@string/button_direct"
+      android:onClick="answerDirect" />
+    <Button
+      android:layout_weight="2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:text="@string/button_teardrop"
+      android:onClick="answerTeardrop" />
+    <Button
+      android:layout_weight="2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:text="@string/button_parallel"
+      android:onClick="answerParallel" />
+  </LinearLayout>
+</LinearLayout>

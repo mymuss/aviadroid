@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AviaDroid
+    Copyright (C) 2014  Andrew Novikov
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<resources>
+  <string name="app_name">AviaDroid</string>
+  <string name="txt_main_title">Select Practice Mode</string>
+  <string name="txt_main_disclaimer">For training use only. Not an official source of flight information. Do not use for
+    preflight or navigation. This application is furnished "as is". No warranties express, implied, or statutory,
+    including, but not limited to, any warranty of fitness for a particular purpose or any warranty
+    that the application will be error-free.</string>
+  <string name="button_reciprocal">Reciprocal Heading</string>
+  <string name="button_holding">Holding Pattern Entry</string>
+  <string name="button_vor">VOR Navigation</string>
+
+  <string name="txt_reciprocal_title">Reciprocal Headings</string>
+  <string name="txt_reciprocal_current_label">Current Heading</string>
+  <string name="txt_reciprocal_prompt">Reciprocal Heading (three digits)</string>
+  <string name="reciprocal_alert_message_correct" formatted="false">Correct answer!
+    The Reciprocal Heading for %s is %s.</string>
+  <string name="reciprocal_alert_message_incorrect" formatted="false">Nope. The Reciprocal Heading for %s is %s. To find
+    reciprocal heading add 180 to the current heading and if the result is over 360 subtract 360. Remember to use
+    three digits and pad with leading zeroes if needed.</string>
+
+  <string name="txt_holding_title">Holding Pattern Entry</string>
+  <string name="holding_clearance_pattern" formatted="false">%s Cleared To %s, Hold %s on %s Radial, %s Turns</string>
+  <string name="fix_name">Nantucket VOR</string>
+  <string name="button_direct">Direct</string>
+  <string name="button_teardrop">Teardrop</string>
+  <string name="button_parallel">Parallel</string>
+  <string name="holding_alert_message_correct" formatted="false">Correct answer! %s entry is recommended here.</string>
+  <string name="holding_alert_message_incorrect_single" formatted="false">Nope. %s entry is recommended here.</string>
+  <string name="holding_alert_message_incorrect_multiple" formatted="false">Nope. Recommended pattern entries here are %s
+    or %s</string>
+
+  <string name="txt_vor_title">VOR Navigation</string>
+
+  <string-array name="callsigns_arr">
+    <item>N123AB</item>
+    <item>JetBlue 1318</item>
+    <item>Oceanic 815</item>
+    <item>AirFrance 338</item>
+    <item>Cactus 1549</item>
+    <item>AirForce 1</item>
+  </string-array>
+
+  <!-- Common stuff -->
+  <string name="alert_title_correct">CORRECT!</string>
+  <string name="alert_title_incorrect">Incorrect :-(</string>
+  <string name="alert_button_ok">OK</string>
+
+  <!-- Enum values -->
+  <!-- holding pattern turns -->
+  <string name="e_left">Left</string>
+  <string name="e_right">Right</string>
+
+  <!-- holding patter entry procedures -->
+  <string name="e_direct">Direct</string>
+  <string name="e_teardrop">Teardrop</string>
+  <string name="e_parallel">Parallel</string>
+
+  <!-- cardinal directions -->
+  <string name="e_north">North</string>
+  <string name="e_northeast">Northeast</string>
+  <string name="e_east">East</string>
+  <string name="e_southeast">Southeast</string>
+  <string name="e_south">South</string>
+  <string name="e_southwest">Southwest</string>
+  <string name="e_west">West</string>
+  <string name="e_northwest">Northwest</string>
+</resources>
