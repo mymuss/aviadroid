@@ -26,8 +26,9 @@ public class HeadingUtils {
     public static final int CARDINAL_SOUTH          = 180;
     public static final int CARDINAL_WEST           = 270;
 
-    // full circle on a compass card
+    // compass card constants
     public static final int FULL_CIRCLE             = 360;
+    public static final int HALF_CIRCLE             = 180;
 
     // I wonder who would use Integer.MIN_VALUE as a real heading
     // but this is what a normalized heading for Integer.MIN_VALUE

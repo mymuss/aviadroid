@@ -47,4 +47,25 @@ public class PointLatLong {
         this.longitude = longitude;
         return this;
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if (!(obj instanceof PointPolar)) {
+            return false;
+        }
+
+        PointLatLong pp = (PointLatLong)obj;
+        return (pp.getLatitude() == this.latitude) && (pp.getLongitude() == this.longitude);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 41;
+        long dlat = Double.doubleToLongBits(latitude);
+        result = 31 * result + (int)(dlat ^ (dlat >>> 32));
+        long dlon = Double.doubleToLongBits(longitude);
+        result = 31 * result + (int)(dlon ^ (dlon >>> 32));;
+
+        return result;
+    }
 }

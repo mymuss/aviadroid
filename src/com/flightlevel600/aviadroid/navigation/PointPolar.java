@@ -50,4 +50,24 @@ public class PointPolar {
         this.radial = radial;
         return this;
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if (!(obj instanceof PointPolar)) {
+            return false;
+        }
+
+        PointPolar pp = (PointPolar)obj;
+        return (pp.getRadial() == this.radial) && (pp.getDistance() == this.distance);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 42;
+        long dl = Double.doubleToLongBits(distance);
+        result = 31 * result + (int)(dl ^ (dl >>> 32));
+        result = 31 * result + radial;
+
+        return result;
+    }
 }
